@@ -1,1 +1,1 @@
-secret.txtgit
+secret.txt
