@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    color : #2a5a85;
+
+}
+h2 {
+    color : #3f5f88;
+}
+
+body {
+    background-color: #2b3341;
+}
+
+body {
+    border: 2px solid black;
+    padding: 25px;
+    background-image: url("../img/abstract-art-background-289649.jpg");
+}
+
+p {
+    font-family: 'Permanent Marker', cursive;
+}
+
+th {
+    text-align: left;
+}
