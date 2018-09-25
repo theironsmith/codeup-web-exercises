@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 40px;
+}
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+.column {
+    float: left;
+    padding: 10px;
+    background-color: #999999;
+    border: 1px solid black;
+}
+.one-eighth{
+    width: 12.5%;
+    background-color: yellowgreen;
+}
+.one-sixth{
+    width: 16.66667%;
+    background-color: #cdac73;
+}
+.one-fourth{
+    width: 25%;
+    background-color: #cbffcd;
+}
+.one-third {
+    width: 33.3333%;
+    background-color:darkcyan;
+}
+.one-half {
+    width: 50%;
+    background: dodgerblue;
+}
