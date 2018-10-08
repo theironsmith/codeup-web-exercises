@@ -100,15 +100,15 @@ var random = Math.floor((Math.random() * 3) + 1);
 //  * prompt the user for the bill total and a percentage they would like to tip,
 //  * then display the dollar amount they should tip
 //  */
-function totalCalculateBillTip (billTotal, tipPercentage) {
-    var tipAmount = billTotal * (tipPercentage / 100);
-    return tipAmount;
-}
-
-alert("Your tip is " +  totalCalculateBillTip(100, 20));
-
-
-console.log(tipAmount);
+// function calculateTip (billTotal, tipPercentage) {
+//     var tipAmount = billTotal * (tipPercentage / 20);
+//     return tipAmount;
+// }
+//
+// alert("Your tip is " +  calculateTip(20, 4));
+//
+//
+// console.log(tipAmount);
 
 
 /**
@@ -121,7 +121,51 @@ console.log(tipAmount);
  * Example:
  * > var originalPrice = 100;
  * > var dicountPercent = .2; // 20%
- * > applyDiscount(originalPrice, dicountPercent) // 80
+ * > applyDiscount(originalPrice, discountPercent) // 80
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+
+// function applyDiscount(originalPrice, discountPercentage) {
+//
+// }
+
+
+//(1)
+// function returnTwo(){
+//     return 2;
+// }
+// console.log(returnTwo());
+//(2)
+// function returnName(){
+// //     return "Keenan";
+// // }
+// // console.log(returnName());
+
+//(3) function addThree(x){
+//     return x + 3;
+// }
+// console.log(addThree(5));
+
+//(4)
+// function sayString(){
+// //     return "string";
+// // }
+// // console.log(sayString());
+
+//05 function sayHowdy(){
+//     return "Howdy!";
+// }
+// console.log(sayHowdy());
+
+function identity(input) {
+    return input;
+}
+console.log(identity('lol'));
+
+
+
+
+
+
