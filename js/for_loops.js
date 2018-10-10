@@ -49,16 +49,21 @@
 // } while(allCones > 0);
 //     console.log("Yay! I sold all the cones and get to go home!");}
 
-function isEven(num) {
-    return num % 2 === 0;
-}
-var randomNumber;
-for (var 1 = 0; i < 10; i++) {
-    randomNumber = Math.floor(Math.random() * 180) + 20;
+// function isEven(num) {
+//     return num % 2 === 0;
+// }
+// var randomNumber;
+// for (var 1 = 0; i < 10; i++) {
+//     randomNumber = Math.floor(Math.random() * 180) + 20;
 
-    if(isEven(randomNumber)){
-        console.log(randomNumber + " is even!");
-    } else {
-        console.log(randomNumber + " is odd!");
-    }
+//     if(isEven(randomNumber)){
+// //         console.log(randomNumber + " is even!");
+// //     } else {
+// //         console.log(randomNumber + " is odd!");
+// //     }
+// // }
+
+for (var i = 1; i <= 9; i++){
+    i = i + "";
+    console.log(i.repeat(i));
 }
