@@ -49,8 +49,8 @@
     //     discount = .12;
     //     totalAfterDiscount = shoppers.amount - shoppers.amount * discount;
     //     }
-    //     return shoppers.name + " they have to pay " + shoppers.amount + " and it has a discount of " +
-    //         discount + " with a savings after the discount of " + totalAfterDiscount;
+    //     return shoppers.name + " they have to pay $" + shoppers.amount + " without the discount but with it, it has a discount of " +
+    //         discount + "% applied now making it $" + totalAfterDiscount;
     //     }
     //     shoppers.forEach(function (shoppers) {
     //         console.log(amount(shoppers))
@@ -69,13 +69,49 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+//     var books=[
+//         {
+//             title: "Narnia",
+//             author: {
+//                 first: "John",
+//                 last: "Smith"
+//             }
+//         },
+//         {
+//             title: "Hardy Boys",
+//             author: {
+//                 first: "Nina",
+//                 last: "Williams"
+//             }
+//         },
+//         {
+//             title: "John Wick",
+//             author: {
+//                 first: "Patrick",
+//                 last: "Ljuan"
+//             }
+//         },
+//         {
+//             title: "Man Up!",
+//             author: {
+//                 first: "Bedros",
+//                 last: "Keuilian"
+//             }
+//         },
+//         {
+//             title: "The Dichotomy of Leadership",
+//             author: {
+//                 first: "Jocko",
+//                 last: "Willink"
+//             }
+//         }
+// ];
+//    console.log(books[0]);
+//    console.log(books[1]);
+//    console.log(books[2]);
+//    console.log(books[3]);
+//    console.log(books[4]);
 
-
-    book([0].author.firstName);
-    book([1].author.firstName);
-    book([2].author.firstName);
-    book([3].author.firstName);
-    book([4].author.firstName);
 
 
     /**
