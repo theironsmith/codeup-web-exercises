@@ -1,7 +1,7 @@
 // Instantiate a map and platform object:
 var platform = new H.service.Platform({
-    'app_id': '0p9ScKjsFsmO6Ejbg6cL',
-    'app_code': 'f1e3aCqx_ewUCWr_YT7EEg'
+    'app_id': '',
+    'app_code': ''
 });
 // Retrieve the target element for the map:
 var targetElement = document.getElementById('mapContainer');
