@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Haus</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Domine|Mr+Dafoe" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-top">
+        <a class="navbar-brand" id="coffee-call" href="#">Coffee Haus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Our Mission </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <form method="get" class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search">
+                        <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">Find Store Near Me!</button>
+                    </form>
+                </li>
+            </ul>
+            <a href="#" class="nav-link signup">
+                <i class="far fa-user mr-2"></i>
+                Sign up
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mb-3">
+
+            <div class="justify-content-center my-4 jumbotron jumbotron-fluid pizza">
+                <h1>Coffee!</h1>
+            </div>
+
+        <div class="row">
+            <div class="col-7">
+                <div id="cup-size" class="row mb-3">
+                    <div class="card coffeeCard bg-light">
+                    <img class="card-img-top" src="img/coffee-cup-s.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4>Small</h4>
+                        <p class="card-text">Need a little pick me up? Our small size is available at 10oz. and is $2.99!</p>
+                    </div>
+                </div>
+                    <div class="card coffeeCard bg-light">
+                        <img class="card-img-top" src="img/coffee-cup-m.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4>Medium</h4>
+                            <p class="card-text">Wanna enjoy our coffee for a little while longer? Our medium is available at 16oz. and is $3.99!</p>
+                        </div>
+                    </div>
+                    <div class="card coffeeCard bg-light">
+                        <img class="card-img-top" src="img/coffee-cup.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4>Large</h4>
+                            <p class="card-text">Our largest size, as you'd expect is large. It is 24oz, and available for $4.99!</p>
+                        </div>
+                    </div>
+                </div>
+                <main id="coffees"></main>
+            </div>
+
+
+            <div class="col-5" id="form-boy mt-3">
+        <form>
+            <div class="row card bg-light p-3">
+                <label for="roast-selection">Select Roast</label>
+                <select id="roast-selection" class="form-control">
+                    <option>Show All</option>
+                    <option>Light</option>
+                    <option>Medium</option>
+                    <option>Dark</option>
+                </select>
+                <label for="search">Search Coffee By Name</label>
+                <input type="search" id="search" class="search form-control" placeholder="Bean Search">
+                <button id="submit" class="form-control mt-4 btn btn-success" type="submit">Submit Search</button>
+            </div>
+        </form>
+                <form action="#">
+                    <div class="row card bg-light p-3">
+                        <label for="roast-suggestion">Select Roast</label>
+                        <select id="roast-suggestion" class="form-control">
+                            <option value="Light">Light</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Dark">Dark</option>
+                        </select>
+                        <label for="suggestion-name">Don't See Your Cup of Joe? Give Us A Suggestion!</label>
+                        <input type="text" id="suggestion-name" class="search form-control" placeholder="Name of Coffee">
+                        <button id="newSuggestion" class="form-control mt-4 btn btn-success" type="submit">Submit Your Suggestion</button>
+                    </div>
+                </form>
+                <form action="#" method="post">
+                    <div class="row card bg-light p-3">
+                        <label for="coffee-order">Select your coffee!</label>
+                        <select name="coffee-order" id="coffee-order" class="form-control"></select>
+                        <label for="size-order">Select your coffee size!</label>
+                        <select name="size-order" id="size-order" class="form-control">
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                        <button id="submitOrder" class="form-control mt-4 btn btn-success" type="submit">Submit Your Order</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <footer class="bg-light py-3 pl-2">Copyright© 2018, Coffee Haus <img class="logo-ch" src="img/clipart1483851042.png"></footer>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
