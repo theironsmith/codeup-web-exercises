@@ -42,17 +42,53 @@
     <dt>10. Volcanoes</dt>
     <dd>There is 1 active volcano, thousands of petrified trees, and almost 300 waterfalls in Yellowstone National Park.</dd>
 </dl>
+
+    <div><h3>Mount Rushmore:</h3>
+            <ul>
+                <li>Thomas Jefferson was originally started on George Washington's right. However, after 18 months they realized that it was not working. Jefferson's face was dynamited off and carved on the other side</li>
+                <li>It took 14 years to complete Mount Rushmore.</li>
+                <li>No one died while building Mount Rushmore (surprisingly).</li>
+                <li>The sculpture cost $989,992.32 to build.</li>
+            </ul>
+    </div>
+    <div><h3>Saguaro National Park:</h3>
+            <ul>
+                <li>Reptiles that can be found in the desert of Saguaro National Park include desert spiny lizards, western coral snakes, Gila monsters, rattlesnakes (six known species), eastern collared lizards, and desert tortoises.</li>
+                <li>Saguaro National Park is home to more than 1,160 plant species including everything ranging from cacti, creosote, and other desert plants, to ponderosa pine and Douglas fir in the mountains.</li>
+                <li>The fruit of the saguaro cactus is harvested every year, as it has been done for centuries before explorers landed in North America. Once the national monument was created an agreement was put in place to protect the ability of the Tohono O'odham Nation to continue this harvest. Visitors that arrive during harvest can sometimes witness the harvesting and processing of the fruit.</li>
+                <li>The Wilderness Area in Rincon Mountain District has 100 miles of trails, and includes grassland, woodland, mixed forests, and desert for visitors to explore.</li>
+            </ul>
+    </div>
+    <div><h3>Big Bend:</h3>
+            <ul>
+                <li>The Rio Grande River runs through Big Bend National Park. The park is named Big Bend after the river's big bend in west Texas.</li>
+                <li>Approximately 118 miles of the Big Bend National Park border run along the international border between the United States and Mexico.</li>
+                <li>Because Big Bend National Park is so remote it is one of the least visited parks in the United States, with only about 300,000 visitors each year despite being so large in size.</li>
+                <li>The Chisos Mountains are the only mountain range in the United States to be completely contained within a national park. Chisos Mountains are also the most southern United States mountain range.</li>
+            </ul>
+    </div>
+
+<button type="button">Click Me!</button>
 <script src="js/jquery-2.2.4.js">
 
 </script>
 <script>
     $(document).ready(function() {
-        $("dd").addClass("invisible");
-        $("button").click(function () {
-            $("dd").toggleClass("invisible");
+        $('dd').addClass('invisible');
+
+        $('button').click(function () {
+            $('li').css('background-color', 'yellow');
         });
+
         $('dt').click(function () {
             $(this).next('dd').toggleClass('invisible');
+        });
+
+        $('h3').click(function () {
+            $(this).next().children().css('font-weight', 'bold');
+        });
+        $('li').click(function () {
+            $(this).parent().prev().css('color', 'blue')
         });
     });
 </script>
