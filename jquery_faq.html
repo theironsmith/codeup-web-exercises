@@ -10,7 +10,8 @@
     </style>
 </head>
 <body>
-
+<div id="newsletter"><h1>Would you like to sign up for our newsletter? <span>x</span></h1></div>
+<h2 class="signInTitle">Please sign in</h2>
 <dl>
     <dt>1. The National Parks are recovering</dt>
     <dd>There are 407 sites covering more than 84 million acres of land</dd>
@@ -74,6 +75,9 @@
 </script>
 <script>
     $(document).ready(function() {
+        setTimeout(function() {
+            $('.fadein').fadeIn();
+        },8000);
         $('dd').addClass('invisible');
 
         $('button').click(function () {
@@ -85,10 +89,16 @@
         });
 
         $('h3').click(function () {
-            $(this).next().children().css('font-weight', 'bold');
+            $(this).next().children().slideToggle().css('font-weight', 'bold');
         });
         $('li').click(function () {
-            $(this).parent().prev().css('color', 'blue')
+            $(this).parent().prev().css('color', 'blue');
+        });
+        $('h1').click(function () {
+            $('#newsletter').hide();
+        });
+        $('h2.signInTitle').click(function() {
+           $(this).fadeToggle();
         });
     });
 </script>
