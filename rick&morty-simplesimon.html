@@ -23,6 +23,9 @@
             width:200px;
             text-align: center;
             align-content: center;
+            top:0;
+            left:0;
+            border-radius:100% 0 25% 0;
 
         }
 
@@ -31,6 +34,9 @@
             width: 200px;
             text-align: center;
             align-content: center;
+            top:0;
+            right:0;
+            border-radius: 0 100% 0 25%;
 
         }
 
@@ -39,6 +45,9 @@
             width: 200px;
             text-align: center;
             align-content: center;
+            bottom:0;
+            left:0;
+            border-radius: 0 25% 0 100%;
 
         }
 
@@ -47,19 +56,21 @@
             width: 200px;
             text-align: center;
             align-content: center;
-
+            bottom:0;
+            right:0;
+            border-radius: 25% 0 100% 0;
         }
 
         .dark1 {
-            background-color: #10b958;
+            background-color: #3a9053;
         }
 
         .light1 {
-            background-color: #13FF75;
+            background-color: #00ff56;
         }
 
         .dark2 {
-            background-color: #c61611;
+            background-color: #6d1611;
         }
 
         .light2 {
@@ -318,8 +329,8 @@
     $('#on').on('click', function () {
         $('#count').text('--');
 
-        for (i=0; i<20; i++) {
-            random[i] = Math.ceil((Math.random() * 4));
+        for (j=0; j<20; j++) {
+            random[j] = Math.ceil((Math.random() * 4));
         }
 
         $('#strict').on('click', function () {

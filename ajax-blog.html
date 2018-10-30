@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="posts"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+$.ajax({
+url: "data/blog.json",
+type: "GET"
+}).done(function(data) {
+data.forEach(function(tool){
+$("#posts").append("<tr></tr>");
+$("tr").last().append("<td>"+tool.title+"</td>");
+$("tr").last().append("<td>"+tool.content+"</td>");
+$("tr").last().append("<td>"+tool.categories.join(", ")+"</td>");
+})
+});
+</script>
+$(
+</body>
+</html>
