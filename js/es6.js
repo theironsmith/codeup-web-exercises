@@ -91,6 +91,6 @@ for (let developer of developers){
 
 
 // TODO: rewrite the assignment below to use template strings
-    list += `<li>'${developer}</li>`;
+    list += `<li>'${developers}</li>`;
 }
 list += '</ul>';
